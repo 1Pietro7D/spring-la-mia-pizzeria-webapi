@@ -18,6 +18,8 @@ public class PizzaSerializer extends JsonSerializer<Pizza>{
 	        gen.writeNumber(pizza.getId());
 	        gen.writeFieldName("name");
 	        gen.writeString(pizza.getName());
+	        gen.writeFieldName("price");
+	        gen.writeNumber(pizza.getPrice());
 	        gen.writeFieldName("description");
 	        gen.writeString(pizza.getDescription());
 	        
