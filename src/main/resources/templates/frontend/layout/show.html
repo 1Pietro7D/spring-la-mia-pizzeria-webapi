@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous" defer
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+	
+    <!--link rel="stylesheet" href="css/style.css" /-->
+    
+     <!---- ControllerPizza ---->
+     <script type="text/javascript" src="../javascript/pizzaController/show.js" defer></script>
+     <script type="text/javascript" src="../javascript/pizzaController/delete.js" defer></script>
+     <!---- /ControllerPizza ---->
+
+    <!-- axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    
+    <title>Lista Pizze</title>
+    <link rel="icon" href="data:image/jpeg;base64,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" />
+  </head>
+
+  <!-- RICORDA CON BOOTSTRAP I MARGINI SOPRA POSSONO COLLASSARE,
+  e che i col hanno 0.75rem ai lati -->
+
+  <body>
+    <!-- #region HEADER -->
+    <h1>Lista Pizze</h1>
+    <div id="pizzaShow"></div>
+  </body>
+</html>
