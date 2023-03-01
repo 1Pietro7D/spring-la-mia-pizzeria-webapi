@@ -1,7 +1,7 @@
-INSERT INTO springpizzeriacrud.pizze(description, img_path, name, price) VALUES('mozzarella, pomodoro', 'https://picsum.photos/200/300', 'margherita', 6.50);
-INSERT INTO springpizzeriacrud.pizze(description, img_path, name, price) VALUES('di tutto e di più', 'https://picsum.photos/200/300', 'fantasia del pizzaiolo', 10);
-INSERT INTO springpizzeriacrud.pizze(description, img_path, name, price) VALUES('misto mare', 'https://picsum.photos/200/300', 'sapori di mare', 9);
-INSERT INTO springpizzeriacrud.pizze(description, img_path, name, price) VALUES('ananas, na cosa barbarica', 'https://picsum.photos/200/300', 'ananas', 3.5);
+INSERT INTO springpizzeriacrud.pizze(description, img_path, name, price) VALUES('mozzarella, pomodoro', 'https://picsum.photos/250/200', 'margherita', 6.50);
+INSERT INTO springpizzeriacrud.pizze(description, img_path, name, price) VALUES('di tutto e di più', 'https://picsum.photos/250/200', 'fantasia del pizzaiolo', 10);
+INSERT INTO springpizzeriacrud.pizze(description, img_path, name, price) VALUES('misto mare', 'https://picsum.photos/250/200', 'sapori di mare', 9);
+INSERT INTO springpizzeriacrud.pizze(description, img_path, name, price) VALUES('ananas, na cosa barbarica', 'https://picsum.photos/250/200', 'ananas', 3.5);
 INSERT INTO springpizzeriacrud.offerte(data_inizio, data_fine,titolo, pizza_id) VALUES( '2023-01-01', '2023-01-31','offerta gennaio', 1);
 INSERT INTO springpizzeriacrud.offerte(data_inizio, data_fine,titolo, pizza_id) VALUES( '2023-02-01', '2023-02-28','offerta febbraio', 2);
 INSERT INTO springpizzeriacrud.offerte(data_inizio, data_fine,titolo, pizza_id) VALUES( '2023-03-01', '2023-03-31','offerta marzo', 3);
