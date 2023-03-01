@@ -1,6 +1,5 @@
-console.log("delete post");
-
 function deletePizza(pizzaId) {
+    console.log("delete post");
     const risposta = confirm('Sei sicuro?');
 
     if (risposta) {
