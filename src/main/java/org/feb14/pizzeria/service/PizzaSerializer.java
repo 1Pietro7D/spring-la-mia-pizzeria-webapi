@@ -22,6 +22,8 @@ public class PizzaSerializer extends JsonSerializer<Pizza>{
 	        gen.writeNumber(pizza.getPrice());
 	        gen.writeFieldName("description");
 	        gen.writeString(pizza.getDescription());
+	        gen.writeFieldName("img_path");
+	        gen.writeString(pizza.getImgPath());
 	        
 	        gen.writeFieldName("ingredients"); // non serve il ciclo for perchè è attivo il @JsonBackReference
 	        gen.writeObject(pizza.getIngredients());
