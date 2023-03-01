@@ -17,14 +17,14 @@ function pizzaList() {
                 "pizzaList"
             ).innerHTML += `
                 <div>Name:
-                    <a href="./detail.html?id=${pizza.id}">${pizza.id}</a>
+                    <a id="${pizza.id}" class="btn btn-info" onclick="showPizza(${pizza.id})">${pizza.name}</a>
                 </div>
                 <div>Price : 
-                <span>${pricePizza}</span>
+                    <span>${pricePizza}</span>
                 </div>
-                <div>${pizza.name}</div>
+               
                 <div>
-                    <a class="btn btn-primary" onclick="deletePizza(${pizza.id})">
+                    <a class="btn btn-warning" onclick="deletePizza(${pizza.id})">
                         <i class="fa-solid fa-trash-can"> </i>
                     </a>
                 </div>      
@@ -33,7 +33,8 @@ function pizzaList() {
                         <i class="fa-solid fa-pen-to-square"> </i>
                     </a>
                 </div>         
-            `
+            `;
+
         });
     }).catch((res) => {
         //codice da eseguire se la richiesta non è andata a buon fine
